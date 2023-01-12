@@ -14,16 +14,16 @@
 
     <!-- modern-normalize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- modern-normalize -->
+    <!-- /modern-normalize -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
+
     <header class="page-header">
       <div class="container box-header">
-        <!-- nav menu -->
         
-        <a class="logotype link" href="./index.html"
+        <a class="header-logo-link link" href="./index.html"
         ><span class="logo-color">web</span>studio</a>
 
         <nav class="page-nav">
@@ -32,7 +32,6 @@
               <a class="menu-link link current-page" href="./index.html">Studio</a>
             </li>
             <li class="menu-item">
-              <!-- <a class="menu-link link" href="./portfolio.html" target="_blank">Portfolio</a> -->
               <a class="menu-link link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="menu-item">
@@ -52,8 +51,111 @@
             >
           </li>
         </ul>
-  
+        
+
+
+        <!-- open button burger mobile-menu-->
+        <button type="button" class="mobile-menu-open">
+          <svg class="mobile-menu-icon" width="32" height="22">
+            <use href="./images/svg/symbol-defs.svg#icon-burger"></use>
+          </svg>
+        </button>
+
       </div>
+
+      <!-- mobile-menu and close-btn (backdrop)-->
+      <div class="mobile-modal">
+       
+        <div class="container mobile-menu-box">
+
+          <button type="button" class="modal-close-btn mobile-close-btn">
+            <svg class="modal-close-btn-icon" width="8" height="8">
+              <use href="./images/svg/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+  
+          <ul class="mobile-menu-list list">
+            <li class="mobile-menu-item-top">
+              <a class="mobile-menu-link menu-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-menu-item-top">
+              <a class="mobile-menu-link menu-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item-top">
+              <a class="mobile-menu-link menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+
+
+
+
+          
+
+          <div class="mobile-menu-bottom-box">
+            <!-- contakts mobile-menu -->
+          <ul class="mobile-contakts-list list">
+            
+            <li class="mobile-contakt-item">
+              <a class="mobile-tell-link menu-link link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a>
+            </li>
+            <li class="mobile-contakt-item">
+              <a class="mobile-mail-link menu-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a>
+            </li>
+          </ul>
+
+
+
+
+
+
+
+
+          <!-- social-mobile link -->
+          <ul class="social-mobile-list social-team-list list">
+            <li class="social-team-item">
+              <a href="#" class="social-team-link link">
+                <svg class="social-team-svg" width="16" height="16">
+                  <use href="./images/svg/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-team-item">
+              <a href="#" class="social-team-link link">
+                <svg class="social-team-svg" width="16" height="16">
+                  <use href="./images/svg/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-team-item">
+              <a href="#" class="social-team-link link">
+                <svg class="social-team-svg" width="16" height="16" fill="#f4f4fd">
+                  <use href="./images/svg/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-team-item">
+              <a href="#" class="social-team-link link">
+                <svg class="social-team-svg" width="16" height="16">
+                  <use href="./images/svg/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          </div>
+          
+
+
+
+            
+        </div>
+        
+      </div>
+
     </header>
 
   
@@ -67,67 +169,75 @@
         </div> 
       </section>
 
+
+      <!-- <div class="example">
+        <div class="boxa ex1">1</div>
+        <div class="boxa ex2">2</div>
+        <div class="boxa ex3">3</div>
+        <div class="boxa ex4">4</div>
+      </div> -->
+
       <!-- section N2 About-->
       <section class="section-about">
         <div class="container about-box">
           <h2 hidden>About us</h2>
-        <ul class="list-about list">
-          <li class="item-about">
+          <ul class="list-about list">
+            <li class="item-about">
 
-            <div class="icon-about">
-              <svg class="icon-about-svg">
-                <use href="./images/svg/symbol-defs.svg#icon-strategy"></use>
-              </svg>
-            </div>
+              <div class="icon-about">
+                <svg class="icon-about-svg">
+                  <use href="./images/svg/symbol-defs.svg#icon-strategy"></use>
+                </svg>
+              </div>
 
-            <h3 class="title-about">Strategy</h3>
-            <p class="text-about">
-              Our goal is to identify the business problem to walk away with the
-              perfect and creative solution.
-            </p>
-          </li>
-          <li class="item-about">
-            <div class="icon-about">
-              <svg class="icon-about-svg">
-                <use href="./images/svg/symbol-defs.svg#icon-punctuality"></use>
-              </svg>
-            </div>
-            <h3 class="title-about">Punctuality</h3>
-            <p class="text-about">
-              Bring the key message to the brand's audience for the best price
-              within the shortest possible time.
-            </p>
-          </li>
-          <li class="item-about">
-            <div class="icon-about">
-              <svg class="icon-about-svg">
-                <use href="./images/svg/symbol-defs.svg#icon-diligence"></use>
-              </svg>
-            </div>
-            <h3 class="title-about">Diligence</h3>
-            <p class="text-about">
-              Research and confirm brands that present the strongest digital
-              growth opportunities and minimize risk.
-            </p>
-          </li>
-          <li class="item-about">
-            <div class="icon-about">
-              <svg class="icon-about-svg">
-                <use href="./images/svg/symbol-defs.svg#icon-technologies"></use>
-              </svg>
-            </div>
-            <h3 class="title-about">Technologies</h3>
-            <p class="text-about">
-              Design practice focused on digital experiences. We bring forth a
-              deep passion for problem-solving.
-            </p>
-          </li>
-        </ul>
+              <h3 class="title-about">Strategy</h3>
+              <p class="text-about">
+                Our goal is to identify the business problem to walk away with the
+                perfect and creative solution.
+              </p>
+            </li>
+            <li class="item-about">
+              <div class="icon-about">
+                <svg class="icon-about-svg">
+                  <use href="./images/svg/symbol-defs.svg#icon-punctuality"></use>
+                </svg>
+              </div>
+              <h3 class="title-about">Punctuality</h3>
+              <p class="text-about">
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
+            </li>
+            <li class="item-about">
+              <div class="icon-about">
+                <svg class="icon-about-svg">
+                  <use href="./images/svg/symbol-defs.svg#icon-diligence"></use>
+                </svg>
+              </div>
+              <h3 class="title-about">Diligence</h3>
+              <p class="text-about">
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
+              </p>
+            </li>
+            <li class="item-about">
+              <div class="icon-about">
+                <svg class="icon-about-svg">
+                  <use href="./images/svg/symbol-defs.svg#icon-technologies"></use>
+                </svg>
+              </div>
+              <h3 class="title-about">Technologies</h3>
+              <p class="text-about">
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
+            </li>
+          </ul>
         </div>
-        
       </section>
 
       <!-- section N3 "doing"  -->
+
       <section class="section-doing">
         <div class="container">
           <h2 class="secondery-title">What are we doing</h2>
@@ -155,7 +265,12 @@
         </div>
       </section>
 
+      <div class="exampl container one">426 Tel</div>
+      <div class="exampl container two">767 Tablet</div>
+      <div class="exampl container three">1158 Desctop</div>
+
       <!-- section N4 Our Team-->
+
       <section class="section-team">
         <div class="container">
           <h2 class="secondery-title">Our Team</h2>
@@ -351,6 +466,7 @@
       </section>
 
         <!-- ====section N5 customers=========  -->
+
       <section class="section-customers">
         <div class="customers-box container">
           <h2 class="secondery-title">customers</h2>
@@ -407,15 +523,15 @@
           </ul>
         </div>
       </section>
+
     </main>
 
     <!-- =============footer===================== -->
-    <footer class="footer">
 
-      <div class="general-footer container">
-        <!-- logo-footer-box -->
+    <footer class="footer">
+      <div class="footer-box container">
         <div class="logo-box">
-          <a class="logotype link" href="./index.html" target="_blank"
+          <a class="footer-logo-link link" href="./index.html" target="_blank"
           ><span class="logo-color">web</span>studio</a>
           <p class="footer-text">
             Increase the flow of customers and sales for your business with digital
@@ -423,7 +539,6 @@
           </p>
         </div>
 
-        <!-- Social-footer-box -->
         <div class="social-footer">
           <p class="footer-social-title">Social media</p>
           <ul class="social-footer-list list">
@@ -455,19 +570,17 @@
               <a href="#"  class="social-footer-link link">
                 <svg class="social-footer-svg" width="24" height="24">
                   <use href="./images/svg/symbol-defs.svg#icon-linkedin"></use>
-                  <!-- <use href="./images/svg/symbol-defs.svg#icon-subscribe"></use> -->
                 </svg>
               </a>
             </li>      
           </ul>
         </div>
 
-        <!-- Subscribe-footer-box -->
         <form class="footer-form">
           <label for="subscribe" class="footer-form-label">
             <span class="footer-social-title subscribe-title">Subscribe</span>
           </label>
-          <span class="footer-form-email-wrapper">
+          <span class="footer-form-wrapper">
             <input type="email" id="subscribe" name="email" class="footer-form-input" required placeholder="E-mail">
             
             <button type="submit" class="footer-form-btn">
@@ -483,10 +596,12 @@
 
       </div>
     </footer>
+
     <!-- ============////footer==================== -->
 
 
     <!-- =======backdrop modal-window=============== -->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -498,7 +613,6 @@
         <form class="modal-form">
           <p class="form-title">Leave your contacts and we will call you back</p>
 
-          <!-- Name -->
           <label class="modal-form-label">
             <span class="modal-form-label-desc">Name</span>
             <span class="modal-form-label-wrapper">
@@ -509,15 +623,12 @@
               pattern="^[a-zA-Zа-яА-ЯіІїЇ]+"
               >
               <svg class="modal-form-icon" width="12" height="12">
-                <!-- <use href="./images/svg/symbol-defs.svg#icon-email"></use> -->
-                <!-- <use href="./images/svg/symbol-defs.svg#icon-tel"></use> -->
                 <use href="./images/svg/symbol-defs.svg#icon-name"></use>
               </svg>
             </span>
             
           </label>
 
-          <!-- Phone -->
           <label class="modal-form-label">
             <span class="modal-form-label-desc">Phone</span>
             <span class="modal-form-label-wrapper">
@@ -529,14 +640,11 @@
               title="xxx-xxx-xx-xx"
               >
               <svg class="modal-form-icon" width="13" height="13">
-                <!-- <use href="./images/svg/symbol-defs.svg#icon-email"></use> -->
                 <use href="./images/svg/symbol-defs.svg#icon-tel"></use>
-                <!-- <use href="./images/svg/symbol-defs.svg#icon-name"></use> -->
               </svg>
             </span>
           </label>
 
-          <!-- Email -->
           <label class="modal-form-label">
             <span class="modal-form-label-desc">Email</span>
             <span class="modal-form-label-wrapper">
@@ -547,13 +655,10 @@
               >
               <svg class="modal-form-icon" width="15" height="15">
                 <use href="./images/svg/symbol-defs.svg#icon-email"></use>
-                <!-- <use href="./images/svg/symbol-defs.svg#icon-tel"></use> -->
-                <!-- <use href="./images/svg/symbol-defs.svg#icon-name"></use> -->
               </svg>
             </span>
           </label>
 
-          <!-- textarea -->
           <label  class="modal-form-label">
             <span class="modal-form-label-desc">Comment</span>
             <textarea class="modal-form-input modal-form-comment"
@@ -562,11 +667,9 @@
               ></textarea>
           </label>
 
-          <!-- checkbox -->
           <input id="agree" type="checkbox" name="checkbox" class="modal-form-checkbox visually-hidden ">
           <label for="agree" class="modal-form-checkbox-label">I accept the terms and conditions of the&nbsp; <a href="#">privacy policy</a></span></label>
           
-          <!-- button -->
           <button type="submit" class="hero-btn modal-form-btn">Send</button>
 
         </form>
