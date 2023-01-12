@@ -52,8 +52,94 @@
             >
           </li>
         </ul>
-  
+        
+
+        <!-- open button burger mobile-menu-->
+        <button type="button" class="mobile-menu-open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="mobile-menu-icon" width="32" height="22">
+            <use href="./images/svg/symbol-defs.svg#icon-burger"></use>
+          </svg>
+        </button>
+
       </div>
+
+      <!-- mobile-menu and close-btn (backdrop)-->
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
+       
+        <div class="container mobile-menu-box">
+
+          <button type="button" class="modal-close-btn mobile-close-btn js-close-menu">
+            <svg class="modal-close-btn-icon" width="8" height="8">
+              <use href="./images/svg/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+  
+          <ul class="mobile-menu-list list">
+            <li class="mobile-menu-item-top">
+              <a class="mobile-menu-link menu-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-menu-item-top">
+              <a class="mobile-menu-link menu-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item-top">
+              <a class="mobile-menu-link menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+
+
+          <div class="mobile-menu-bottom-box">
+            <!-- contakts mobile-menu -->
+          <ul class="mobile-contakts-list list">
+            
+            <li class="mobile-contakt-item">
+              <a class="mobile-tell-link menu-link link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a>
+            </li>
+            <li class="mobile-contakt-item">
+              <a class="mobile-mail-link menu-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a>
+            </li>
+          </ul>
+
+          <!-- social-mobile link -->
+          <ul class="social-mobile-list social-team-list list">
+            <li class="social-team-item">
+              <a href="#" class="social-team-link link">
+                <svg class="social-team-svg" width="24" height="24">
+                  <use href="./images/svg/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-team-item">
+              <a href="#" class="social-team-link link">
+                <svg class="social-team-svg" width="24" height="24">
+                  <use href="./images/svg/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-team-item">
+              <a href="#" class="social-team-link link">
+                <svg class="social-team-svg" width="24" height="24" fill="#f4f4fd">
+                  <use href="./images/svg/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-team-item">
+              <a href="#" class="social-team-link link">
+                <svg class="social-team-svg" width="24" height="24">
+                  <use href="./images/svg/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          </div>   
+        </div>
+      </div>
+      <!-- /mobile-menu and close-btn (backdrop)-->
+
     </header>
 
     <main>
@@ -63,7 +149,7 @@
         <!-- buttons -->
         <div class="container">
 
-          <ul class="buttons list">
+          <ul class="buttons-list list">
             <li class="btn-item">
               <button class="modal-btn" type="button">All</button>
             </li>
@@ -91,7 +177,7 @@
                   <img
                     src="./images/portfolio/banking-up.jpg"
                     alt="Cashless Payment"
-                    width="360"
+                    
                     height="300"
                   />
                   <p class="description-overlay">
@@ -348,5 +434,6 @@
 
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

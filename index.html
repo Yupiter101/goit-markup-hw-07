@@ -55,7 +55,7 @@
 
 
         <!-- open button burger mobile-menu-->
-        <button type="button" class="mobile-menu-open">
+        <button type="button" class="mobile-menu-open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
           <svg class="mobile-menu-icon" width="32" height="22">
             <use href="./images/svg/symbol-defs.svg#icon-burger"></use>
           </svg>
@@ -64,11 +64,11 @@
       </div>
 
       <!-- mobile-menu and close-btn (backdrop)-->
-      <div class="mobile-modal">
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
        
         <div class="container mobile-menu-box">
 
-          <button type="button" class="modal-close-btn mobile-close-btn">
+          <button type="button" class="modal-close-btn mobile-close-btn js-close-menu">
             <svg class="modal-close-btn-icon" width="8" height="8">
               <use href="./images/svg/symbol-defs.svg#icon-close"></use>
             </svg>
@@ -87,10 +87,6 @@
           </ul>
 
 
-
-
-          
-
           <div class="mobile-menu-bottom-box">
             <!-- contakts mobile-menu -->
           <ul class="mobile-contakts-list list">
@@ -105,18 +101,11 @@
             </li>
           </ul>
 
-
-
-
-
-
-
-
           <!-- social-mobile link -->
           <ul class="social-mobile-list social-team-list list">
             <li class="social-team-item">
               <a href="#" class="social-team-link link">
-                <svg class="social-team-svg" width="16" height="16">
+                <svg class="social-team-svg" width="24" height="24">
                   <use href="./images/svg/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
@@ -124,7 +113,7 @@
 
             <li class="social-team-item">
               <a href="#" class="social-team-link link">
-                <svg class="social-team-svg" width="16" height="16">
+                <svg class="social-team-svg" width="24" height="24">
                   <use href="./images/svg/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
@@ -132,7 +121,7 @@
 
             <li class="social-team-item">
               <a href="#" class="social-team-link link">
-                <svg class="social-team-svg" width="16" height="16" fill="#f4f4fd">
+                <svg class="social-team-svg" width="24" height="24" fill="#f4f4fd">
                   <use href="./images/svg/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
@@ -140,22 +129,16 @@
 
             <li class="social-team-item">
               <a href="#" class="social-team-link link">
-                <svg class="social-team-svg" width="16" height="16">
+                <svg class="social-team-svg" width="24" height="24">
                   <use href="./images/svg/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
-          </div>
-          
-
-
-
-            
+          </div>   
         </div>
-        
       </div>
-
+      <!-- /mobile-menu and close-btn (backdrop)-->
     </header>
 
   
@@ -169,13 +152,6 @@
         </div> 
       </section>
 
-
-      <!-- <div class="example">
-        <div class="boxa ex1">1</div>
-        <div class="boxa ex2">2</div>
-        <div class="boxa ex3">3</div>
-        <div class="boxa ex4">4</div>
-      </div> -->
 
       <!-- section N2 About-->
       <section class="section-about">
@@ -265,9 +241,9 @@
         </div>
       </section>
 
-      <div class="exampl container one">426 Tel</div>
+      <!-- <div class="exampl container one">426 Tel</div>
       <div class="exampl container two">767 Tablet</div>
-      <div class="exampl container three">1158 Desctop</div>
+      <div class="exampl container three">1158 Desctop</div> -->
 
       <!-- section N4 Our Team-->
 
@@ -676,5 +652,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
